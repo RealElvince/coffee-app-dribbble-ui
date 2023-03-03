@@ -1,16 +1,4 @@
 # coffeedribbleapp
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# home screen
+![Screenshot_1677782277](https://user-images.githubusercontent.com/124202145/222524488-89c784e2-06ae-4487-b738-01e08f87e2bf.png)
