@@ -1,3 +1,4 @@
+import 'package:coffeedribbleapp/screens/description_screen.dart';
 import 'package:coffeedribbleapp/utilities/coffee_tile.dart';
 import 'package:coffeedribbleapp/utilities/coffee_type.dart';
 import 'package:coffeedribbleapp/widgets/custom_appbar.dart';
@@ -103,19 +104,37 @@ class _HomeScreenState extends State<HomeScreen> {
           Expanded(
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: const [
+              children: [
                 //Latte
-                CoffeeTile(
-                    coffeeImagePath: 'images/latte.png',
-                    coffeeName: 'Latte',
-                    coffeePrice: '1500 KES'),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const DescriptionScreen(),
+                        ));
+                  },
+                  child: const CoffeeTile(
+                      coffeeImagePath: 'images/latte.png',
+                      coffeeName: 'Latte',
+                      coffeePrice: '1500 KES'),
+                ),
                 // Cappucino
-                CoffeeTile(
-                    coffeeImagePath: 'images/java.png',
-                    coffeeName: 'Cappucino',
-                    coffeePrice: '1700 KES'),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const DescriptionScreen(),
+                        ));
+                  },
+                  child: const CoffeeTile(
+                      coffeeImagePath: 'images/java.png',
+                      coffeeName: 'Cappucino',
+                      coffeePrice: '1700 KES'),
+                ),
                 // Expresso
-                CoffeeTile(
+                const CoffeeTile(
                     coffeeImagePath: 'images/image1.png',
                     coffeeName: 'Expresso',
                     coffeePrice: '2000 KES'),
